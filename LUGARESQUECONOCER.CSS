@@ -1,0 +1,78 @@
+:root{
+    --bg-color: #FFFBE6;
+    --container-bg-color: #E7E8D8;
+    --text-color: #00712D;
+    --item-bg-color: #FF9100;
+    background-color: var(--container-bg-color);
+    color: var(--text-color);
+
+}
+body{
+    background-color:var(--container-bg-color);
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    color: var(--item-bg-color);
+    text-align: center;
+}
+h3{
+    color: var(--item-bg-color);
+    text-align: center;
+}
+p{
+    text-align: justify;
+
+}
+ul{
+        text-align: center;
+  
+ 
+    }
+    
+    li{
+        list-style-position: inside;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+  
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reduce el tamaño del texto en pantallas más pequeñas */
+    }
+
+    h3 {
+        font-size: 1.2em; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    img {
+        max-width: 90%; /* Ajusta el tamaño máximo de las imágenes en pantallas más pequeñas */
+        padding: 10px; /* Añade padding en pantallas pequeñas para mejorar el diseño */
+    }
+
+    .frame {
+        padding: 15px; /* Ajusta el padding del marco en pantallas más pequeñas */
+        font-size: 1em; /* Ajusta el tamaño del texto dentro del marco en pantallas más pequeñas */
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    h3 {
+        font-size: 1em; /* Ajusta el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    img {
+        max-width: 100%; /* Asegura que las imágenes llenen el ancho disponible en pantallas muy pequeñas */
+    }
+
+    .frame {
+        padding: 10px; /* Reduce el padding del marco en pantallas muy pequeñas */
+        font-size: 0.9em; /* Ajusta el tamaño del texto dentro del marco en pantallas muy pequeñas */
+    }
+}

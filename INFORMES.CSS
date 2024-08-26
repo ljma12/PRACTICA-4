@@ -1,0 +1,74 @@
+
+/* Estilos básicos para el cuerpo y html */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: inline; /* Usar Flexbox para centrar el contenido */
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    background-color: #5B99C2;
+
+}
+
+
+/* Estilo para el encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el h1 y el contenido principal */
+}
+
+h1 {
+    font-size: 2.5em; /* Ajusta el tamaño del texto según sea necesario */
+    color: #c81010; /* Cambia el color del texto si es necesario */
+    text-align: center;
+}
+
+/* Estilo para el contenedor principal */
+.ventana {
+    text-align: center;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.571953781512605) 70%, rgba(255,255,255,0.5775560224089635) 70%);
+    padding: 40px; /* Ajusta el padding para un mejor diseño */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #4CAF50; /* Borde del recuadro */
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+    color: #1A4870;
+    max-width: 90%; /* Ancho máximo adaptativo */
+    width: 500px; /* Ajusta el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y border en el cálculo del ancho */
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para inputs y textarea */
+input, textarea {
+    width: 100%; /* Asegura que el input y textarea se ajusten al ancho del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
+
+/* Estilo para el h3 debajo del contenedor */
+h3 {
+    margin-top: 20px; /* Espacio arriba del h3 */
+    font-size: 1.5em; /* Tamaño de fuente ajustable */
+    color: #e52424; /* Cambia el color del texto si es necesario */
+    text-align: center;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reduce el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .ventana {
+        padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+        font-size: 1em; /* Reduce el tamaño de fuente para pantallas pequeñas */
+    }
+
+    h3 {
+        font-size: 1.2em; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+}

@@ -1,0 +1,56 @@
+:root{
+    --bg-color: #CADABF;
+    --container-bg-color: #E7E8D8;
+    --text-color: #BC9F8B;
+    --item-bg-color: #B5CFB7;
+    color: black;
+    width: 60vw;
+    height: 310vh;
+    text-align: justify;
+    background-image: URL("./imagenes/pexels-trupert-1032650.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    font-family: "Bungee Tint", sans-serif;
+
+}
+
+.informes{
+    background-color:black;
+    color: white;
+}
+
+.image-container h1 {
+    position: relative; /* Permite posicionar el texto encima de la imagen */
+    top: 50%; /* Posiciona el texto verticalmente en el centro */
+    left: 50%; /* Posiciona el texto horizontalmente en el centro */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el texto */
+    color: rgb(0, 0, 0); /* Cambia el color del texto para que sea visible sobre la imagen */
+    font-size: 3em; /* Ajusta el tamaño del texto */
+    padding: 10px; /* Opcional: agrega un poco de padding para el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Opcional: agrega sombra al texto para mejorar la legibilidad */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+
+}
+
+th {
+    padding: 0; /* Elimina el padding de las celdas para ajustar el tamaño de las imágenes */
+    text-align: center; /* Centra las imágenes dentro de las celdas */
+    border-left: 100px;
+    
+}
+
+img.imagen {
+    width: 400px; /* Establece un ancho fijo para todas las imágenes */
+    height: 300px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el área especificada */
+}
